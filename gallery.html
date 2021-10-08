@@ -387,10 +387,8 @@
             });
 
             function showImageContent(index){
-                imgModalDiv.querySelector('#img-modal img').src ='images/gallery-'+index+'.jpg';
-                console.log(index);
+                imgModalDiv.querySelector('#img-modal img').src =`images/gallery-${index}.jpg`;
             }
-
             modalCloseBtn.addEventListener('click', () => {
                 imgModalDiv.style.display = "none";
             })
